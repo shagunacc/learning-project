@@ -8,6 +8,8 @@ import { CreateEmployeeComponent } from './create-employee/create-employee.compo
 //import * as $ from 'jquery';
 import { FormsModule } from '@angular/forms';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import { PayrollModule } from './payroll/payroll.module';
+import { PayrollRoutingModule } from './payroll/payroll-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,12 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    PayrollModule,
+    PayrollRoutingModule,
+    AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
